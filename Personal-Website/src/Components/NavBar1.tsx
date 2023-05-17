@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { MyColors } from './MyColors';
+import React from "react";
 
 
 function NavBar1() {
@@ -16,7 +17,7 @@ function NavBar1() {
 
   return (
     
-      <Navbar bg="dark" variant="dark" style={{backgroundColor:MyColors.gray200}}>
+      <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#home">
             <img

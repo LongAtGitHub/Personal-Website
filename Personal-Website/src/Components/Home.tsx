@@ -1,10 +1,11 @@
 import Container from "react-bootstrap/Container";
 import WaveC from "./SupportingComps/WaveC";
 import { MyColors } from "./MyColors";
+import React from "react";
 
 function Home() {
   return (
-    <div style={{ height: "100vh", width: "100hw", backgroundColor:MyColors.lightWhite }}>
+    <div style={{ height: "40vh", width: "100hw" }}>
       <Container>
         <h1
           style={{ textAlign: "center", fontSize: "15vh" }}
@@ -23,12 +24,7 @@ function Home() {
           "A journey of a thousand miles begins with a single step"{" "}
         </p>
       </Container>
-      
-        <WaveC myColor={MyColors.gray200} />
-        <div style={{ backgroundColor: MyColors.gray200, height: "30%" }}>
-          {"\u00A0"}
-        </div>
-    </div>
+      </div>
   );
 }
 

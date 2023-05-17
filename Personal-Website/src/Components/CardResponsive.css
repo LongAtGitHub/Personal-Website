@@ -1,0 +1,13 @@
+/* laptop */
+@media screen and (min-width: 600px) {
+    .card-responsive {
+      height: 40vh;
+    }
+  }
+
+/*phone*/  
+@media screen and (min-width: 100px) and (max-width: 400px) {
+    .card-responsive {
+      height: auto;
+    }
+  }

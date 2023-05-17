@@ -1,14 +1,12 @@
 import React from "react";
 import Wave from "react-wavify";
+import { MyColors } from "../MyColors";
 
-interface WaveCProps {
-  myColor: string;
-}
-function WaveC(props: WaveCProps) {
-  const myColor = props.myColor;
+
+function WaveC() {
   return (
-    <Wave
-      fill={myColor}
+    <Wave 
+      fill={MyColors.gray200}
       paused={false}
       options={{
         height: 40,
