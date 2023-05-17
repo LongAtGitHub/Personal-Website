@@ -4,10 +4,10 @@ import { MyColors } from "./MyColors";
 
 function Home() {
   return (
-    <div style={{ height: "100vh", width: "100hw" }}>
+    <div style={{ height: "100vh", width: "100hw", backgroundColor:MyColors.lightWhite }}>
       <Container>
         <h1
-          style={{ textAlign: "center", marginTop: "10vh", fontSize: "15vh" }}
+          style={{ textAlign: "center", fontSize: "15vh" }}
         >
           Long Truong
         </h1>
@@ -23,12 +23,11 @@ function Home() {
           "A journey of a thousand miles begins with a single step"{" "}
         </p>
       </Container>
-      <div>
-        <WaveC myColor={MyColors.lightWhite} />
-      </div>
-      <div
-        style={{ backgroundColor: MyColors.lightWhite, height: "50%" }}
-      ></div>
+      
+        <WaveC myColor={MyColors.gray200} />
+        <div style={{ backgroundColor: MyColors.gray200, height: "30%" }}>
+          {"\u00A0"}
+        </div>
     </div>
   );
 }

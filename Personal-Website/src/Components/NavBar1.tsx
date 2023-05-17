@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import { MyColors } from './MyColors';
 
 
 function NavBar1() {
@@ -14,8 +15,8 @@ function NavBar1() {
   };
 
   return (
-    <>
-      <Navbar bg="dark" variant="dark">
+    
+      <Navbar bg="dark" variant="dark" style={{backgroundColor:MyColors.gray200}}>
         <Container>
           <Navbar.Brand href="#home">
             <img
@@ -28,14 +29,14 @@ function NavBar1() {
             Personal Website
           </Navbar.Brand>
           <Nav className="me-auto ms-5" >
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#experience" >Experience</Nav.Link>
             <Nav.Link href="#contacts" onClick={handleClickScroll}>Contacts</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
-    </>
+ 
   );
 }
 
