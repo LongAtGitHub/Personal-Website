@@ -1,19 +1,20 @@
 import Container from "react-bootstrap/Container";
-import WaveC from "./SupportingComps/WaveC";
-import { MyColors } from "./MyColors";
+import WaveC from "./WaveC";
+import { MyColors } from "../MyColors";
 import React from "react";
 
 function Home() {
   return (
-    <div style={{ height: "40vh", width: "100hw" }}>
+  
+    <div style={{ height: "50vh", width: "100hw" }}>
       <Container>
+        <div style ={{height:"10vh"}}></div>
         <h1
           style={{ textAlign: "center", fontSize: "15vh" }}
         >
           Long Truong
         </h1>
-        <p
-          style={{
+        <p style={{
             textAlign: "center",
             marginTop: "3vh",
             fontSize: "5vh",

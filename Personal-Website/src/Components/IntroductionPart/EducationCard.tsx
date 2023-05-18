@@ -5,14 +5,14 @@ import "./CardResponsive.css"
 
 function EducationCard() {
   return (
-    <Card className="card-responsive" >
+    <Card style={{height:"50vh"}}>
       {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
       <Card.Body>
         <Card.Title>Education</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">
             Macalester College Class Year 2025 - Computer Science Major
         </Card.Subtitle>
-        <Card.Text>
+        
             <div>GPA: 3.9/4.0</div>
             <div>Dean's List Fall 2022</div>
             <div>
@@ -25,7 +25,6 @@ function EducationCard() {
               </ul>
               
             </div>
-        </Card.Text>
         {/* <Button variant="primary">Go somewhere</Button> */}
       </Card.Body>
     </Card>
