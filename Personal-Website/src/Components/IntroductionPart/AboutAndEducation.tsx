@@ -5,7 +5,7 @@ import AboutCard from "./AboutCard";
 import EducationCard from "./EducationCard";
 
 function AboutAndEducation() { return(
-    <Container>
+    <Container id="about">
         <h1 className="m-2" style={{textAlign:"center"}}>About & Education</h1> 
         <div>{"\u00A0"}</div>
         <Row>

@@ -6,24 +6,66 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import React from "react";
 import { MyColors } from "../MyColors";
-import { Badge, Button } from "react-bootstrap";
+import { Badge, Button, Container } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
-import jsLogo from './SvgFolder/javascript-icon.svg';
-import unityLogo from './SvgFolder/unity-icon.svg'
+// All icon tsx
+import javaLogo from "./SvgFolder/java-icon.svg"
+import cppLogo from "./SvgFolder/cpp-icon.svg"
+import jsLogo from "./SvgFolder/javascript-icon.svg"
+import reactJsLogo from "./SvgFolder/reactjs-icon.svg"
+import unityLogo from "./SvgFolder/unity-icon.svg"
+
 
 function Timeline() {
-  
+  const LogoCppComponent = () => 
+  <div className="m-2"><img src={cppLogo} alt="cppLogo" /></div>;
+  const LogoReactJSComponent = () => 
+  <div className="m-2"><img src={reactJsLogo} alt="reactJsLogo" /></div>;
+  const LogoUnityComponent = () => 
+  <div className=""><img src={unityLogo} alt="unityLogo" /></div>;
+  const LogoJSComponent = () => 
+  <div className="m-2"><img src={jsLogo} alt="jsLogo" /></div>;
+  const LogoJavaComponent = () => 
+  <div className="m-2"><img src={javaLogo} alt="javaLogo" /></div>;
   
   return (
     
     
     <VerticalTimeline>
+      {/* This personal website */}
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="2023 May"
+        iconStyle={{ background: "#fff", color: "#fff" }}
+        icon={<LogoReactJSComponent/>}
+      >
+        <h6>
+          <Badge bg="secondary">ReactJS</Badge> <Badge bg="secondary">TypeScript</Badge> <Badge bg="secondary">React Bootstrap</Badge>
+        </h6>
+        <h3 className="vertical-timeline-element-title">The Personal Website</h3>
+        <p>
+          A personal website created with React + TypeScript to showcase my skills and experience. You are viewing it directly 😀.
+        </p>
+        <div>{"\u00A0"}</div>
+        <Button
+          variant="primary"
+          href="https://github.com/LongAtGitHub/Personal-Website"
+          target="_blank"
+        >
+          Show project code
+        </Button>{" "}
+       
+      </VerticalTimelineElement>
+
+
+
       {/* 3D Map Project */}
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2023 Jan - 2023 May"
         iconStyle={{ background: "#fff", color: "#fff" }}
-      
+        icon={<LogoUnityComponent/>}
       >
         <h6>
           <Badge bg="secondary">Unity</Badge> <Badge bg="secondary">C#</Badge>
@@ -46,11 +88,12 @@ function Timeline() {
         </Button>{" "}
       </VerticalTimelineElement>
 
-      {/* 3D Simulation App */}
+      {/* 3D Simulation Solar System App */}
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2023 Jan - 2023 May"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        iconStyle={{ background: "#fff", color: "#fff" }}
+        icon={<LogoCppComponent/>}
       >
         <h6>
           <Badge bg="secondary">C++</Badge> <Badge bg="secondary">OpenGL</Badge>{" "}
@@ -79,7 +122,8 @@ function Timeline() {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2022 November"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        iconStyle={{ background: "#fff", color: "#fff" }}
+        icon={<LogoJavaComponent/>}
       >
         <h6>
           <Badge bg="secondary">Java</Badge>{" "}
@@ -105,7 +149,8 @@ function Timeline() {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2022 November"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        iconStyle={{ background: "#fff", color: "#fff" }}
+        icon={<LogoJSComponent/>}
       >
         <h6>
           <Badge bg="secondary">JavaScript</Badge>{" "}

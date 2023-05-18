@@ -4,7 +4,7 @@ import Timeline from "./Timeline";
 
 function Experience() {
     return (
-        <Container>
+        <Container id="experience">
            <h1 className="m-2" style={{textAlign:"center"}}>Experience</h1> 
            <Timeline/>
         </Container>  );

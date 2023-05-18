@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from "react-bootstrap";
 function Projects() {
     return (
-    <Container>
+    <Container id="projects">
        <h1 className="m-2" style={{textAlign:"center"}}>Projects</h1> 
        <Timeline/>
     </Container>  );

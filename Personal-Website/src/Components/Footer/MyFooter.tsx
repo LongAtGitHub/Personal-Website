@@ -7,7 +7,7 @@ import EmailLogo from './EmailLogo.svg';
 
 function MyFooter() {
   return (
-    <footer style ={{backgroundColor: MyColors.footer, color:"white"}} >
+    <footer id="contacts" style ={{backgroundColor: MyColors.footer, color:"white"}} >
       <Container >
         <div>{"\u00A0"}</div>
         <div style ={{fontSize: "large" }}>&copy; 2023 Long Truong. All rights reserved.</div>

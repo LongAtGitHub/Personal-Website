@@ -7,14 +7,6 @@ import React from "react";
 
 
 function NavBar1() {
-  const handleClickScroll = () => {
-    const element = document.getElementById('section-1');
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
       <Container>
@@ -31,10 +23,10 @@ function NavBar1() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto ms-5">
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#about" >About</Nav.Link>
+            <Nav.Link href="#projects" >Projects</Nav.Link>
             <Nav.Link href="#experience">Experience</Nav.Link>
-            <Nav.Link href="#contacts" onClick={handleClickScroll}>Contacts</Nav.Link>
+            <Nav.Link href="#contacts">Contacts</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
