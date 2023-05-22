@@ -13,7 +13,7 @@ function NavBar1() {
         <Navbar.Brand href="#home">
           <img
             alt=""
-            src="src\Image\apple-icon.svg"
+            src="https://github.com/LongAtGitHub.png"
             width="30"
             height="30"
             className="d-inline-block align-top"

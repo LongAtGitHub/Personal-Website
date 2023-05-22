@@ -1,9 +1,10 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { MyColors } from '../MyColors';
-import GitHubLogo from './GitHubLogo.svg';
-import LinkedInLogo from './LinkedInLogo.svg';
-import EmailLogo from './EmailLogo.svg';
+import GitHubLogo from "../../Image/GitHubLogo.svg";
+import LinkedInLogo from "../../Image/LinkedInLogo.svg";
+import EmailLogo from "../../Image/EmailLogo.svg";
+
 
 function MyFooter() {
   return (
